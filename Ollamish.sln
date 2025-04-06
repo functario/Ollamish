@@ -22,12 +22,23 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{639D10E1-B6E2-47B8-A4FB-958A9807ADE6}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		.env.example = .env.example
 		.gitignore = .gitignore
 		Directory.Build.props = Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
 		.config\dotnet-tools.json = .config\dotnet-tools.json
 		global.json = global.json
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{8A39F8FB-C7C6-4BFE-8FCA-1408FE5359AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ollamish.WebApi", "src\Presentation\Ollamish.WebApi\Ollamish.WebApi.csproj", "{FA60A6F7-B1A3-49DA-B688-5BFB3344B1CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ollamish.EndpointMapper", "src\Presentation\Ollamish.EndpointMapper\Ollamish.EndpointMapper.csproj", "{2F0EA5E2-CCAC-4F83-B715-262F1A8A35DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{13B35D31-605A-4FF2-9CD5-BA0E02A34648}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellKnowns", "src\Shared\WellKnowns\WellKnowns.csproj", "{8D87EFCF-7AC8-4373-ADB4-C57EC8B3F60B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +62,18 @@ Global
 		{EEF1C74D-7AAE-402A-8462-86BA71F1CB35}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEF1C74D-7AAE-402A-8462-86BA71F1CB35}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEF1C74D-7AAE-402A-8462-86BA71F1CB35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA60A6F7-B1A3-49DA-B688-5BFB3344B1CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA60A6F7-B1A3-49DA-B688-5BFB3344B1CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA60A6F7-B1A3-49DA-B688-5BFB3344B1CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA60A6F7-B1A3-49DA-B688-5BFB3344B1CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F0EA5E2-CCAC-4F83-B715-262F1A8A35DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F0EA5E2-CCAC-4F83-B715-262F1A8A35DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F0EA5E2-CCAC-4F83-B715-262F1A8A35DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F0EA5E2-CCAC-4F83-B715-262F1A8A35DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D87EFCF-7AC8-4373-ADB4-C57EC8B3F60B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D87EFCF-7AC8-4373-ADB4-C57EC8B3F60B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D87EFCF-7AC8-4373-ADB4-C57EC8B3F60B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D87EFCF-7AC8-4373-ADB4-C57EC8B3F60B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,5 +84,10 @@ Global
 		{E16A354C-DFE3-4945-8AD0-D4C0118B227F} = {8E96B71A-EA99-4ACE-851A-21881CAF28F3}
 		{CA182615-98A7-4959-8F14-D5FB46D0398B} = {E16A354C-DFE3-4945-8AD0-D4C0118B227F}
 		{EEF1C74D-7AAE-402A-8462-86BA71F1CB35} = {DE139539-0453-4C02-BB3A-4B48AE3D5BA6}
+		{8A39F8FB-C7C6-4BFE-8FCA-1408FE5359AE} = {8E96B71A-EA99-4ACE-851A-21881CAF28F3}
+		{FA60A6F7-B1A3-49DA-B688-5BFB3344B1CB} = {8A39F8FB-C7C6-4BFE-8FCA-1408FE5359AE}
+		{2F0EA5E2-CCAC-4F83-B715-262F1A8A35DB} = {8A39F8FB-C7C6-4BFE-8FCA-1408FE5359AE}
+		{13B35D31-605A-4FF2-9CD5-BA0E02A34648} = {8E96B71A-EA99-4ACE-851A-21881CAF28F3}
+		{8D87EFCF-7AC8-4373-ADB4-C57EC8B3F60B} = {13B35D31-605A-4FF2-9CD5-BA0E02A34648}
 	EndGlobalSection
 EndGlobal

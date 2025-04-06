@@ -1,8 +1,10 @@
+﻿using WellKnowns.Aspire;
+using WellKnowns.Presentation;
+
 var builder = DistributedApplication.CreateBuilder(args);
 
-var ollamaServiceName = "ollama";
 var ollama = builder
-    .AddOllama(ollamaServiceName)
+    .AddOllama(OllamaProjectReferences.ProjectName)
     .WithGPUSupport()
     .WithDataVolume()
     .WithExternalHttpEndpoints()
@@ -13,15 +15,13 @@ var ollama = builder
 
 var deepseek = ollama.AddModel("llama2-uncensored:7b");
 
-//var deepseek = ollama.AddModel("dolphin-mixtral:8x7b");
 //ollama.AddModel("deepseek-r1:8b");
 //ollama.AddModel("phi4");
 
-// CLI
-
-//builder.AddProject<Projects.Ollamish_Cli>("ollamish-cli")
-//    .WithReference(deepseek)
-//    .WaitFor(deepseek);
-
+builder
+    .AddProject<Projects.Ollamish_WebApi>(WebApiProjectReferences.ProjectName)
+    .WithEndpoint("https", endpoint => endpoint.IsProxied = false)
+    .WithEndpoint("http", endpoint => endpoint.IsProxied = false)
+    .WaitFor(ollama);
 
 builder.Build().Run();

@@ -1,0 +1,6 @@
+@Ollamish.WebApi_HostAddress = http://localhost:5276
+
+GET {{Ollamish.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
