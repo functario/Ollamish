@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "csharpier": {
+      "version": "0.30.6",
+      "commands": [
+        "dotnet-csharpier"
+      ]
+    },
+    "dotnet-ef": {
+      "version": "9.0.2",
+      "commands": [
+        "dotnet-ef"
+      ],
+      "rollForward": false
+    },
+    "microsoft.openapi.kiota": {
+      "version": "1.21.0",
+      "commands": [
+        "kiota"
+      ],
+      "rollForward": false
+    }
+  }
+}
