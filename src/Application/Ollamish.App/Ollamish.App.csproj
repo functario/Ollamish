@@ -16,6 +16,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Presentation\Ollamish.EndpointMapper\Ollamish.EndpointMapper.csproj" />
+    <ProjectReference Include="..\..\Shared\WellKnowns\WellKnowns.csproj" />
+    <ProjectReference Include="..\Ollamish.App.Abstrations\Ollamish.App.Abstrations.csproj" />
   </ItemGroup>
 
 </Project>

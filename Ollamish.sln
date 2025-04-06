@@ -40,6 +40,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{13B35D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellKnowns", "src\Shared\WellKnowns\WellKnowns.csproj", "{8D87EFCF-7AC8-4373-ADB4-C57EC8B3F60B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ollamish.App.Abstrations", "src\Application\Ollamish.App.Abstrations\Ollamish.App.Abstrations.csproj", "{1F68CAAA-7978-4437-8D9D-2352E088D24D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{8D87EFCF-7AC8-4373-ADB4-C57EC8B3F60B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D87EFCF-7AC8-4373-ADB4-C57EC8B3F60B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D87EFCF-7AC8-4373-ADB4-C57EC8B3F60B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F68CAAA-7978-4437-8D9D-2352E088D24D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F68CAAA-7978-4437-8D9D-2352E088D24D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F68CAAA-7978-4437-8D9D-2352E088D24D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F68CAAA-7978-4437-8D9D-2352E088D24D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,5 +95,6 @@ Global
 		{2F0EA5E2-CCAC-4F83-B715-262F1A8A35DB} = {8A39F8FB-C7C6-4BFE-8FCA-1408FE5359AE}
 		{13B35D31-605A-4FF2-9CD5-BA0E02A34648} = {8E96B71A-EA99-4ACE-851A-21881CAF28F3}
 		{8D87EFCF-7AC8-4373-ADB4-C57EC8B3F60B} = {13B35D31-605A-4FF2-9CD5-BA0E02A34648}
+		{1F68CAAA-7978-4437-8D9D-2352E088D24D} = {E16A354C-DFE3-4945-8AD0-D4C0118B227F}
 	EndGlobalSection
 EndGlobal

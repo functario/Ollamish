@@ -25,4 +25,10 @@
     <Folder Include="OpenAPI\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Documents\DOC0001.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

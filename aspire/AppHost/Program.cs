@@ -22,6 +22,7 @@ builder
     .AddProject<Projects.Ollamish_WebApi>(WebApiProjectReferences.ProjectName)
     .WithEndpoint("https", endpoint => endpoint.IsProxied = false)
     .WithEndpoint("http", endpoint => endpoint.IsProxied = false)
-    .WaitFor(ollama);
+    .WaitFor(ollama)
+    .WithReference(ollama);
 
 builder.Build().Run();

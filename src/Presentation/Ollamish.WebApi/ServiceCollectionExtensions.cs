@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Ollamish.App;
 using Ollamish.EndpointMapper.Extensions;
 using WellKnowns.Exceptions;
 using WellKnowns.Presentation;
@@ -10,10 +11,11 @@ internal static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddOllamishWebApi(
         this IServiceCollection services,
-        HostBuilderContext _
+        HostBuilderContext context
     )
     {
         services
+            .AddOllamishApp(context)
             .AddEndpoints(Assembly.GetAssembly(typeof(Program))!)
             .AddEndpointsApiExplorer()
             .WithTimeProvider()

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Ollamish.App.Abstrations.UseCases.ChatSessions;
 
 namespace Ollamish.WebApi.Endpoints.Chats.GetChat;
 
@@ -10,12 +11,14 @@ public class GetChatEndpoint : IGetChatEndpoint
         endpointBuilder.MapGet("/", HandleAsync).WithSummary($"Get Chat.").WithName("GetChat");
     }
 
-    public Task<Ok<string>> HandleAsync(
+    public async Task<Ok<string>> HandleAsync(
         [FromQuery] string prompt,
+        [FromServices] IChatSession chatSession,
         CancellationToken cancellationToken
     )
     {
-        var response = prompt;
-        return Task.FromResult(TypedResults.Ok(response));
+        ArgumentNullException.ThrowIfNull(chatSession, nameof(chatSession));
+        var response = await chatSession.Ask(prompt, cancellationToken);
+        return TypedResults.Ok(response);
     }
 }
