@@ -9,6 +9,15 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" />
+    <PackageReference Include="Microsoft.KernelMemory.AI.Ollama" />
+    <PackageReference Include="Microsoft.KernelMemory.Core" />
+    <PackageReference Include="Microsoft.SemanticKernel" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Presentation\Ollamish.EndpointMapper\Ollamish.EndpointMapper.csproj" />
+    <ProjectReference Include="..\..\Shared\WellKnowns\WellKnowns.csproj" />
+    <ProjectReference Include="..\Ollamish.App.Abstrations\Ollamish.App.Abstrations.csproj" />
   </ItemGroup>
 
 </Project>

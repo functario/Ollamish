@@ -16,4 +16,9 @@
     <PackageReference Include="CommunityToolkit.Aspire.Hosting.Ollama" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Presentation\Ollamish.WebApi\Ollamish.WebApi.csproj" />
+    <ProjectReference Include="..\..\src\Shared\WellKnowns\WellKnowns.csproj"  IsAspireProjectResource="false" />
+  </ItemGroup>
+
 </Project>
