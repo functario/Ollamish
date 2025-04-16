@@ -12,9 +12,9 @@ var ollama = builder
     .WithLifetime(ContainerLifetime.Persistent);
 
 ollama.AddModel("llama3:8b");
-ollama.AddModel("deepseek-r1:8b");
-ollama.AddModel("stablelm2:12b");
-ollama.AddModel("phi4");
+//ollama.AddModel("deepseek-r1:8b");
+//ollama.AddModel("stablelm2:12b");
+//ollama.AddModel("phi4");
 
 builder
     .AddProject<Projects.Ollamish_WebApi>(WebApiProjectReferences.ProjectName)
